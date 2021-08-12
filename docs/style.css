@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 100%;
+	margin: 10px 0;
+}
+.controls {
+	width: 420px;
+	margin: 0 5px 10px;
+}
+.controls label {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5px 0;
+}
+.controls .grow-input {
+	width: 300px;
+	display: flex;
+}
+.controls .grow-input input,
+.controls .grow-input textarea {
+	flex-grow: 1;
+}
+.break-all {
+	word-break: break-all;
+}
+#ligatures {
+	border: 1px solid black;
+	padding: 2px;
+	max-height: 300px;
+	overflow-y: auto;
+}
+.ligature {
+	padding: 5px 10px;
+	border: 1px solid #6d6d6d;
+	border-radius: 3px;
+	overflow: auto;
+}
+.ligature h1 {
+	font-family: monospace;
+	font-size: 18px;
+	margin: 0 5px 0 0;
+	float: left;
+}
+.ligature .glyphs img {
+	max-height: 40px;
+	max-width: 40px;
+}
+#err {
+	color: red;
+	margin-bottom: 10px;
+}
+#canvas {
+	box-shadow: 0 0 5px #0005;
+	image-rendering: pixelated;
+	width: 800px;
+	height: 400px;
+}

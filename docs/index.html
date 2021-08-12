@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scribble Font Maker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script type="module" src="js/maker.js"></script>
+</head>
+<body>
+	<canvas id="canvas" width="400" height="200"></canvas>
+	<div id="err" hidden></div>
+	<div class="controls">
+		<label>
+			<input type="file" id="open-file" accept="image/png">
+			<input type="button" id="start-new" value="Start New">
+		</label>
+		<label>
+			Preview Text:
+			<span class="grow-input">
+			<textarea type="text" id="preview-text" rows="2"></textarea>
+			</span>
+		</label>
+		<label>
+			Scribble FPS:
+			<span class="grow-input">
+			<input type="number" id="fps" min="0" value="10">
+			</span>
+		</label>
+		<div id="ligatures">
+			<div class="ligature">
+				<h1>"a"</h1>
+				<div class="glyphs">
+					<img src="a">
+					<img src="a">
+					<img src="a">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
